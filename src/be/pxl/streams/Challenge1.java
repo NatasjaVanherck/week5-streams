@@ -8,7 +8,10 @@ public class Challenge1 {
 		List<String> tombolaNummers = Arrays.asList("A12", "a20", "B120", "b72", "d53", "D42", "d50", "F12");
 		// print alle tombolanummers die starten met D (of d) gesorteerd, steeds met de eerste letter in uppercase
 		// Gewenste output: D42 D50 D53 
-		tombolaNummers.stream().
-
+		tombolaNummers.stream()
+					  .map(String::toUpperCase)
+					  .filter(s -> s.contains("D"))
+					  .sorted()
+					  .forEach(System.out::println);
 	}
 }
