@@ -2,8 +2,6 @@ package be.pxl.streams;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.OptionalInt;
-import java.util.stream.Stream;
 
 public class Challenge3 {
 	public static void main(String[] args) {
