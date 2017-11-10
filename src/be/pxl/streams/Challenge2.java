@@ -21,7 +21,9 @@ public class Challenge2 {
 		
 		OptionalInt max = IntStream.of(randomGetallen).filter(s -> (s % 3 == 0))
 								                      .max();
-		
+		//OptionalInt result = new Random()
+								//.ints(0, 31).limit(10).filter(n -> n % 3 == 0)
+								//.peek(System.out::println).max();
 		if(max.isPresent()){
 			System.out.println(max.getAsInt());
 		} else {
